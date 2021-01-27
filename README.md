@@ -24,7 +24,8 @@ $ docker-compose up -d
 
 # run migrates
 
-$ npx knex migrate:latest
+$ docker exec task-api sh -c "npm run migrate"
+
 ```
 
 #
