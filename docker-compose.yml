@@ -20,7 +20,9 @@ services:
       ports: 
        - 3333:3333
       depends_on: 
-       - "db"
+       - db
+      env_file: 
+       - ./.env
 
     web:
       image: biojj/task-web
