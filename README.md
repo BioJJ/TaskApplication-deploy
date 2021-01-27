@@ -24,7 +24,7 @@ $ docker-compose up -d
 
 # run migrates
 
-$ docker exec task-api sh -c "npm run migrate"
+$ docker exec task-api sh -c "npx knex migrate:latest"
 
 ```
 
